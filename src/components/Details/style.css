@@ -1,0 +1,158 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.modal > button {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+}
+
+.modal .MuiSvgIcon-root {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.details {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    background: linear-gradient(to top, #000000, #0c0b0b, #151313, #1b1919, #221f1f);
+    position: relative;
+}
+
+.details > .container {
+    display: flex;
+    padding: 5rem 0;
+}
+
+.details__left-wrapper {
+    width: 50%;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.details__head {
+    margin-bottom: 3rem;
+}
+
+.details__media {
+    font-size: 1.2rem;
+    color: var(--red-color);
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+.details__title > h3 {
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.details__title > h3 {
+    display: flex;
+}
+
+.details__genres {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.details__genres > li {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    color: #808080;
+}
+
+.details__actions {
+    display: flex;
+    align-items: center;
+}
+
+.details__actions > span {
+    color: var(--red-color);
+}
+
+.details__button {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: var(--red-color);
+}
+
+.details__button > .MuiSvgIcon-root {
+    margin-right: 0.5rem;
+}
+
+.details__overview {
+    margin-bottom: 5rem;
+}
+
+.details__specifications {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+}
+
+.details__specifications > div > span {
+    margin-right: 1rem;
+}
+
+.details__rating {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.details__rating > img {
+    width: 3.5rem;
+    position: absolute;
+    left: 8.5rem;
+}
+
+.details__productor {
+    display: flex;
+}
+
+.details__productor  p {
+    font-weight: 400;
+}
+
+.details__right-wrapper {
+    width: 50%;
+    background-color: black;
+}
+
+.details--loader {
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .details > .container {
+        flex-direction: column;
+    }
+
+    .details__left-wrapper {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .details__right-wrapper {
+        width: 100%;
+        min-height: 300px;
+    }
+}

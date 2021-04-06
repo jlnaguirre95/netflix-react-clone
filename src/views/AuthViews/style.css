@@ -1,0 +1,116 @@
+.auth-view {
+    width: 100vw;
+    height: 100vh;
+    background: url('../../assets/login-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-view > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-view__head {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-view__logo {
+    width: 20rem;
+}
+
+.auth-view__logo > img {
+    width: 100%;
+}
+
+.auth-view__discover {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.auth-view__discover > a {
+    margin-right: 1rem;
+}
+
+.auth-view__discover > .MuiSvgIcon-root {
+    font-size: 3rem;
+}
+
+.auth-view__form {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-view__form-container {
+    width: 450px;
+    min-height: 70vh;
+    padding: 6rem;
+    background: rgba(0,0,0,0.7);
+    border-radius: 7px;
+}
+
+.auth-view__form-container > h1 {
+    margin-bottom: 4rem;
+}
+
+.auth-view__form-container > form {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-view__error {
+    color: var(--red-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.auth-view__input {
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(43, 43, 43);
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.auth-view__input > input {
+    width: 100%;
+    font-size: 1.8rem;
+    color: rgb(156, 156, 156);
+}
+
+.auth-view__input--error {
+    border-bottom: 2px solid var(--red-color)
+}
+
+.auth-view__btn {
+    margin-top: 2.5rem;
+}
+
+.auth-view__form-container > p {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: gray;
+}
+
+.auth-view__form-container > p > strong {
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+.auth-view__loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

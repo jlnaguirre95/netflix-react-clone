@@ -1,0 +1,65 @@
+.banner {
+    object-fit: contain;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: relative;
+}
+
+.banner > .container {
+    display: flex;
+    align-items: center;
+}
+
+.banner__content {
+    min-width: 40%;
+    width: 600px;
+}
+
+.banner__title {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    line-height: 6rem;
+}
+
+.banner__description {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.banner__buttons {
+    display: flex;
+}
+
+.banner__buttons > .btn > .MuiSvgIcon-root {
+    font-size: 2rem;
+    margin-right: 0.3rem;
+}
+
+.btn--play {
+    color: var(--dark-color);
+    margin-right: 1rem;
+}
+
+.btn--info {
+    color: var(--light-color);
+    background-color: rgba(255,255,255,0.5);
+}
+
+.banner--gradient-bottom {
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(0, 0, 0, 0.6),
+        var(--dark-color) 
+    );
+    position: absolute;
+    bottom: 0;
+}

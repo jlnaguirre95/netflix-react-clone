@@ -1,0 +1,74 @@
+.row {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.row__header {
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.row__header > .container > h2 > span {
+
+}
+
+.row__wrapper-carousel {
+    position: relative;
+}
+
+.row__carousel {
+    padding: 1rem 0;
+    position: relative;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* Hiding scroll bar */
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important;  /* Firefox */
+}
+
+.row__carousel::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari and Opera*/
+}
+
+.row__items {
+    width: 100%;
+    display: flex;
+}
+
+.row__arrow {
+    width: 5%;
+    height: calc(100% - 2rem);
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 450ms ease-in;
+    visibility: hidden;
+    z-index: 50;
+}
+
+.row__arrow:hover {
+    background: rgba(0,0,0,0.4);
+}
+
+.row__wrapper-carousel:hover .row__arrow {
+    visibility: visible;
+}
+
+
+.row__arrow > .MuiSvgIcon-root {
+    font-size: 3rem;
+}
+
+.row__arrow--left {
+    left: 0rem;
+}
+
+.row__arrow--right {
+    right: 0;
+}

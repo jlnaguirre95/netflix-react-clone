@@ -1,0 +1,137 @@
+.navbar {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: transparent;
+    position:fixed;
+    z-index: 20;
+    transition: all 450ms ease-in;
+}
+
+.navbar--solid-color {
+    background-color: var(--dark-color);
+}
+
+.navbar > .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo {
+    width: 10rem;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.navbar__logo > img {
+    width: 100%;
+}
+
+.navbar__navigation {
+    flex: 1;
+    display: flex;
+}
+
+.navbar__navigation > li {
+    margin-right: 2rem;
+}
+
+.navbar__options {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar__search {
+    width: 300px;
+    padding: 0.5rem;
+    margin-right: 3rem;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid var(--light-color);
+    display: flex;
+    align-items: center;
+}
+
+.navbar__search > button > .MuiSvgIcon-root {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.navbar__search > input {
+    margin-left: 1rem;
+    color: var(--light-color)
+}
+
+.navbar__user {
+    width: 3.5rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.navbar__user > img {
+    width: 100%;
+}
+
+.navbar__user:hover {
+    transform: scale(1.1);
+}
+
+.navbar__user-options {
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: rgba(229, 9, 20, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -7rem;
+    right: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar__user-options:hover {
+    background-color: rgba(229, 9, 20, 1);
+}
+
+.navbar__user-options > button {
+    border-radius: 9999px;
+}
+
+.navbar__user-options > button > .MuiSvgIcon-root {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .navbar > .container {
+        flex-direction: column;
+    }
+
+    .navbar__logo {
+        width: 20rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+
+    .navbar__navigation {
+        margin-bottom: 3rem;
+     }
+
+    .navbar__navigation > li {
+       font-size: 1.6rem;
+    }
+
+    .navbar__options {
+        width: 80%;
+    }
+
+    .navbar__search {
+        flex: 1;
+    }
+}
